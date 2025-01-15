@@ -1,6 +1,12 @@
 <?php
 
 test('example', function () {
-    $a = false;
-    expect($a)->toBeTrue();
+    
+    // Primeira versão
+    $value = true;
+
+    // Segunda versão
+    // $value = false;
+
+    expect($value)->toBeTrue();
 });
