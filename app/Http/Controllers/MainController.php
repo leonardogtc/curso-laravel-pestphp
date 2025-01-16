@@ -12,8 +12,11 @@ class MainController extends Controller
         return "Olá Mundo!";
     }
 
-    public function showHash(): string
+    public function showHash($numchars = 32): void
     {
-        return MainOperations::generateHash();
+
+
+        // Com parâmetro da rota:
+        echo "<p>$numchars Caracteres: " . MainOperations::generateHash($numchars) . "</p>";
     }
 }
